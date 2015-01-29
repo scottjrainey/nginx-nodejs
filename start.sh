@@ -15,6 +15,9 @@ fi
 procs=$(cat /proc/cpuinfo |grep processor | wc -l)
 sed -i -e "s/worker_processes 5/worker_processes $procs/" /etc/nginx/nginx.conf
 
+# install npm requirements
+npm install /usr/share/nginx/html/package.json
+
 # Very dirty hack to replace variables in code with ENVIRONMENT values
 
 for i in $(env)
