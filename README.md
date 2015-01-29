@@ -133,7 +133,7 @@ sudo docker run -e 'GIT_REPO=git@git.ngd.io:ngineered/ngineered-website.git' -v 
 ## Special Features
 
 ### Templating
-This container will automatically configure your web application if you template your code. For example if you are linking to MySQL like above, and you have a config.php file where you need to set the MySQL details include $$_MYSQL_ENV_MYSQL_DATABASE_$$ style template tags. 
+This container will automatically configure your web application if you template your code. For example if you are linking to MySQL like above, and you have a config file where you need to set the MySQL details include $$_MYSQL_ENV_MYSQL_DATABASE_$$ style template tags. 
 
 Example:
 
