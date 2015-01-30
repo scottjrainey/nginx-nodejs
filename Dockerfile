@@ -46,6 +46,9 @@ ADD ./package.json /usr/share/nginx/html/package.json
 RUN mkdir /usr/share/nginx/html/public
 Add ./ngineered.png /usr/share/nginx/html/public/ngineered.png
 
+# Add log directories
+RUN mkdir /var/log/node/
+
 # Supervisor Config
 RUN /usr/bin/easy_install supervisor
 RUN /usr/bin/easy_install supervisor-stdout

@@ -1,17 +1,9 @@
 {
   "name": "node-server-example",
+  "description": "Hello World App",
   "version": "0.0.1",
-  "description": "Hello World Example served by express",
-  "main": "server.js",
+  "private": true,
   "dependencies": {
-    "express": "*"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": "",
-  "author": "Richard Harvey",
-  "license": "AGPL"
+    "express": "4.x"
+  }
 }
