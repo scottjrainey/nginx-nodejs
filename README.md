@@ -10,8 +10,8 @@ If you have any improvements please submit a pull request.
 The Docker hub build can be found here: [https://registry.hub.docker.com/u/richarvey/nginx-nodejs/](https://registry.hub.docker.com/u/richarvey/nginx-nodejs/)
 
 ## Nginx Versions
-- Mainline Version: **1.7.9**
-- Stable Version: **1.6.2**
+- Mainline Version: **1.9.0**
+- Stable Version: **1.8.0**
 - *Latest = Mainline Version*
 
 ## Installation
