@@ -25,6 +25,9 @@ RUN apt-get -y install nginx pwgen python-setuptools curl git unzip vim
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN sudo apt-get install -y nodejs
 
+# Install Bower & Grunt
+RUN npm install -g bower grunt-cli
+
 # tweak nginx config
 RUN sed -i -e"s/worker_processes  1/worker_processes 5/" /etc/nginx/nginx.conf # gets over written by start.sh to match cpu's on container
 RUN sed -i -e"s/keepalive_timeout\s*65/keepalive_timeout 2/" /etc/nginx/nginx.conf
