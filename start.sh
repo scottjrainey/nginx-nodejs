@@ -20,9 +20,12 @@ fi
 procs=$(cat /proc/cpuinfo |grep processor | wc -l)
 sed -i -e "s/worker_processes 5/worker_processes $procs/" /etc/nginx/nginx.conf
 
-# install npm requirements
+# install npm and (optional) bower requirements
 cd /usr/share/nginx/html/
 npm install
+if [ -e /usr/share/nginx/html/bower.json ]; then
+  bower install --allow-root
+fi
 
 # Very dirty hack to replace variables in code with ENVIRONMENT values
 
