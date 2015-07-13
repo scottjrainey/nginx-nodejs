@@ -22,7 +22,7 @@ RUN apt-get -y upgrade
 RUN apt-get -y install nginx pwgen python-setuptools curl git unzip vim
 
 # Install NodeJS
-RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 RUN sudo apt-get install -y nodejs
 
 # Install Bower & Grunt
